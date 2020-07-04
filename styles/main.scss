@@ -1,0 +1,28 @@
+@import "intro";
+@import "front";
+@import "timeline";
+@import "project";
+@import "sidebar";
+@import "variables";
+@import "scrollBar";
+@import "clock";
+
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	width: 100%;
+	@include custom-scroll-bar();
+}
+#more {
+	display: none;
+}
+#main {
+    transition: margin-left 0.7s;
+    padding: 16px;
+    text-align: left;
+  }
+.newPage {
+  @include proportions(100%, 100%);
+	font-family: $fontstyle;
+}

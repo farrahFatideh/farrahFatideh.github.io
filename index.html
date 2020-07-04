@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Parsa Yadollahi">
+
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"
+    integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="TitleIcon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="TitleIcon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="TitleIcon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="TitleIcon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="TitleIcon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="TitleIcon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="TitleIcon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="TitleIcon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="TitleIcon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="TitleIcon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="TitleIcon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="TitleIcon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="TitleIcon/favicon-16x16.png">
+  <link rel="manifest" href="TitleIcon/manifest.json">
+
+  <title>Parsa Yadollahi</title>
+</head>
+
+<body class="backimage" style="overflow-x: hidden">
+  <div>
+    <!-- Intro Page -->
+    <div id="home">
+      <div class="mainHead" data-aos="fade">
+        <div class="topBar">
+          <a href="#home" class="topBarTxt" style="padding-left: 1em;">Home</a>
+          <a href="#about" class="topBarTxt" style="float:left;">About</a>
+          <a href="#timeline" class="topBarTxt" style="float:left;">Timeline</a>
+          <a href="#project" class="topBarTxt">Project</a>
+          <a href="#contact" class="topBarTxt" style="padding-right: 1em;">Contact</a>
+          <p id="date" class="date"></p>
+          <p id="timer" class="clock"></p>
+        </div>
+        <!-- Content Intro -->
+        <h1 class="name"><span style="font-weight: 500;">Parsa</span></h1>
+        <p class="smallLine">______</p>
+        <h2 class="universityTitle">McGill University</h2>
+        <h3 class="programTitle">Computer Science</h3>
+        <!-- Link for Buttons -->
+        <a href="https://www.linkedin.com/in/parsa-yadollahi/" target="_blank">
+          <button class="hvr-bob" onclick="window.open('https://www.linkedin.com/in/parsa-yadollahi/','_blank')">
+            <i class="fa fa-linkedin"></i>
+          </button>
+        </a>
+        <a href="https://github.com/ParsaYadollahi" target="_blank">
+          <button class="hvr-bob" onclick="window.open('https://github.com/ParsaYadollahi','_blank')">
+            <i class="fa fa-github"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+    <!-- End Intro -->
+
+    <!-- SideBar -->
+    <div style="max-width:100%">
+      <div class="sticky">
+        <div id="mySidebar" class="sidebar">
+          <a href="#home" class="toggleContent"><i class="material-icons">home</i>Home</a>
+          <a href="#about" class="toggleContent"><i class="material-icons">person</i>About</a>
+          <a href="#timeline" class="toggleContent"><i class="material-icons">access_time</i>Timeline</a>
+          <a href="#project" class="toggleContent"><i class="material-icons">code</i>Project</a>
+          <a href="#contact" class="toggleContent"><i class="material-icons">mail_outline</i>Contact</a>
+        </div>
+        <div id="main">
+          <button class="openbtn" onclick="toggleNav()" id="toggleDiv">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div id="overlay"></div>
+      <!-- About me page -->
+      <hr style="width: 50%; height: 1px;">
+      <div class="clearfix toggle" id="about">
+        <!-- Header (Left Side) -->
+        <div data-aos="fade-left" class="intro">
+          <div class="head" style="padding-top: 1em; position: relative; text-align: left; left: 1em;">
+            <p><span style="color:#005c99">A</span>bout Me</p>
+            <hr align="left" style="width: 15%;">
+          </div>
+          <!-- Content About me (Right Side) -->
+          <p class="introPrt1">
+            I am a second year student at McGill University completing my bachelor's degree in Computer
+            Science. I like working on personal projects
+            and with a team. Currently, I am a Student-Athlete practicing mens Artistic gymnastics and doing
+            my best
+            to manage my studies, sport and social life.
+          </p>
+          <p class="introPrt2">
+            I spend most of my time at school studying at McGill's famous Trottier building on the top
+            floors where everyone seems to either love or loath.
+            When I'm not there, you can catch me sleeping on the couch's in the bottom floors.
+            All I can say, is that Trottier is life.
+          </p>
+          <!-- Resume Button -->
+          <div style="position: relative; right: 3em; text-align: center;">
+            <a href="https://parsayadollahi.github.io/Resume%20-%20Parsa.pdf" target="_blank">
+              <button class="buttonResume" onclick="window.open('Parsa - Resume.pdf','_blank')">
+                Check out my Resume
+              </button></a>
+          </div>
+        </div>
+        <!--Cross Image (Right Side) -->
+        <div data-aos="fade-right" class="crossphoto" id="change">
+          <img class="crossImg" src="images/rings.jpg">
+          <img class="crossImg" src="images/CrossPhoto.jpg">
+        </div>
+      </div>
+
+      <!-- TimeLine page -->
+      <div>
+        <div class="newPage" id="timeline">
+          <div style="text-align: center; color: #a6a6a6; margin-top: 2em;">
+            <hr style="width: 20%; height: 1px;">
+          </div>
+          <div class="backimg">
+            <div class="container" style="text-align: center;">
+              <div class="head" data-aos="fade-up">
+                <p><span style="color:#005c99;">T</span>imeline</p>
+              </div>
+              <ul data-aos="fade-up" class="timeline">
+                <li>
+                  <div data-aos="fade" class="timeline-badge" style="background-color:rgb(102, 102, 102);">
+                    <i class="fa fa-home" style="font-size: 20px;"></i>
+                  </div>
+                  <div data-aos="fade-up-right" class="timeline-panel"
+                    style="background-color: #f2f2f2; border-radius: 5%;">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title" style="font-size: 32px; letter-spacing: 2px;">
+                        HomeTown</h4>
+                      <p style="font-size: 16px;"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>
+                          1998 - 2016</small></p>
+                    </div>
+                    <div class="timeline-body">
+                      <p style="text-align: justify">
+                        I was born in Ottawa and was raised in Gatineau, the capitals
+                        neighboring city, an area of little less
+                        than 300 000 people where I studied all of my elementary and high
+                        school. I lived in this small city
+                        until the age of 18, when i eventually moved to Montreal to experience
+                        the "student-life"
+                        city and to be exposed to more opportunities in school and sport.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div data-aos="fade" class="timeline-badge info" style="background-color: rgb(112, 113, 126);"><i
+                      class="fa fa-child" style="font-size: 20px;"></i></div>
+                  <div data-aos="fade-up-left" class="timeline-panel"
+                    style="background-color: #f2f2f2; border-radius: 5%;">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title" style="font-size: 32px; letter-spacing: 2px;">
+                        Sport</h4>
+                      <p style="font-size: 16px;"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>
+                          2003 - Present</small></p>
+                    </div>
+                    <div class="timeline-body">
+                      <p style="text-align: justify">
+                        I've been practicing men's Artistic gymnastics for 16 years while
+                        devoting 25 hours of
+                        athletic training per week. Since University has started, I've molded my
+                        practices to suit my studies,
+                        reducing the amount of training hours to roughly 10 hours a week. For
+                        the past 3 years I've trained
+                        at the "Centre Père Sablon" gymnastics center, house of Olympic and
+                        world gymnastics championship class athletes.
+                        In my years of competitive gymnastics, I've competed in international
+                        competitions and 7 different national competitions,
+                        spanning all of Canada, earning multiple medals and gaining the top 8
+                        spots.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div data-aos="fade" class="timeline-badge" style="background-color:rgb(106, 117, 148);"><i
+                      class="fa fa-book" style="font-size: 20px;"></i></div>
+                  <div data-aos="fade-up-right" class="timeline-panel"
+                    style="background-color: #f2f2f2; border-radius: 5%;">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title" style="font-size: 32px; letter-spacing: 2px;">
+                        McGill University</h4>
+                      <p style="font-size: 16px;"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>
+                          2018 - 2021</small></p>
+                    </div>
+                    <div class="timeline-body">
+                      <p style="text-align: justify">
+                        Montreal being the student city it is known for, in 2016 I decided to
+                        move to Montreal and attend
+                        Vanier college 2 years before starting University with goal to adapt
+                        myself to Montreal’s environment.
+                        In 2018, I was given the opportunity to attend the prestigious McGill
+                        University, where I am currently in
+                        my second year as a undergraduate in Computer Science.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div data-aos="fade" class="timeline-badge info" style="background-color: rgb(116, 142, 189);"><i
+                      class="fa fa-code" style="font-size: 20px;"></i></div>
+                  <div data-aos="fade-up-left" class="timeline-panel"
+                    style="background-color: #f2f2f2; border-radius: 5%;">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title" style="font-size: 32px; letter-spacing: 2px;">
+                        HackPrinceton</h4>
+                      <p style="font-size: 16px;"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>
+                          November 2018</small></p>
+                    </div>
+                    <div class="timeline-body">
+                      <p style="text-align: justify">
+                        I Participated in my first Hackathon at Princeton in the Fall 2018
+                        semester where me and two of my classmates
+                        at McGill worked on a project called CourseTalk. The motivation behind
+                        this project is the lack of engagement
+                        in school discussion boards. The issue with these panels is the
+                        permanence formality of having to submit
+                        posts, which implies that most students resort to Facebook group chats.
+                        The issue with Facebook is the unawareness
+                        that students have to these group chats and the distractions leaded by
+                        Facebook. Which gave us the inspiration to
+                        create a platform similar to that of Slack, which is not as formal as
+                        discussion panels and that would be integrated
+                        into students' default course page. This would lead to a simpler
+                        communication between students about their coursework.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div data-aos="fade" class="timeline-badge" style="background-color: rgb(173, 193, 233);"><i
+                      class="fa fa-id-badge" style="font-size: 20px;"></i></div>
+                  <div data-aos="fade-up-right" class="timeline-panel"
+                    style="background-color: #f2f2f2; border-radius: 5%;">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title" style="font-size: 32px; letter-spacing: 2px;">
+                        Cisco</h4>
+                      <p style="font-size: 16px;"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>
+                          Summer - 2019</small></p>
+                    </div>
+                    <div class="timeline-body">
+                      <p style="text-align: justify">
+                        In my first summer of University, I had the privilege to work as a
+                        Software Engineer at Cisco - Ottawa as a full-time intern.
+                        In the 15 weeks I interned there, I worked on various projects, notably
+                        test automation on pyATS & Genie.
+                        One of many the libraries made from Cisco that enables network engineers
+                        to automate their day-to-day DevOps activities,
+                        perform stateful validation of their device operational status, and
+                        build a safety net of scalable,
+                        data-driven and reusable test cases around their network.<br>
+
+                        Open source libraries and more details in the following link:
+                        <div style="text-align: center">
+                          <span>
+                            <a href="https://developer.cisco.com/pyats/" target="_blank"
+                              class="pyats">https://developer.cisco.com/pyats/</a>
+                          </span>
+                        </div>
+
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Page -->
+      <div style="text-align: center; color: #a6a6a6; margin-top: 2em;">
+        <hr id="project" style="width: 50%; height: 1px;">
+      </div>
+      <div class="head" data-aos="fade" data-aos-delay="700">
+        <p><span style="color:#005c99;">P</span>rojects</p>
+      </div>
+      <!--First row-->
+      <div class="row ml-3 mr-3 pb-4 pt-1">
+
+        <!--First column-->
+        <div class="col-md-12">
+
+          <div id="mdb-lightbox-ui"></div>
+
+          <!--Full width lightbox-->
+          <div class="mdb-lightbox">
+
+            <figure class="col-md-4 middle" data-aos="fade" data-aos-delay="1000">
+              <div>
+                <a href="https://devpost.com/software/CourseTalk" data-size="1600x1067" class="darken" target="_blank">
+                  <img src="images/ct_img.png" class="proj_imgs img-fluid z-depth-1">
+                  <p class="darken-text darken">
+                    <span class="span-text">HackPrinceton</span></br></br>
+                    <span style="font-size: 160%;">Fall 2018</span></br>
+                    <span style="font-size: 130%;">Developed an online discussion and collaboration
+                      platform</br> Collabs:</br>Marcel Goh (github.com/marcelgoh)</br>
+                      Jad Hamdan (github.com/jadhamdan)</span>
+                  </p>
+                </a>
+
+              </div>
+              <p class="font_para">CourseTalk</p>
+            </figure>
+
+            <figure class="col-md-4 middle" data-aos="fade" data-aos-delay="1300">
+              <a href="https://devpost.com/software/youcompress" data-size="1600x1067" class="darken" target="_blank">
+                <img src="images/ct_img.png" class="proj_imgs img-fluid z-depth-1">
+                <p class="darken-text darken">
+                  <span class="span-text">ImplementAi</span></br></br>
+                  <span style="font-size: 160%;">Fall 2019</span></br>
+                  <span style="font-size: 130%;">Python program that compresses videos by extracting
+                    segments where humans are detected. </br>Collabs</br>Rock Liang (github.com/Riotpiaole)<br>
+                    Nathan Yu (github.com/nyu058/)</span>
+                </p>
+              </a>
+              <p class="font_para">YouCompress</p>
+            </figure>
+
+            <figure class="col-md-4 middle" data-aos="fade" data-aos-delay="1600">
+              <a href="https://github.com/ParsaYadollahi/Wiki_scraper" data-size="1600x1067" class="darken"
+                target="_blank">
+                <img src="images/Wiki_Graph.png" class="proj_imgs img-fluid z-depth-1">
+                <p class="darken-text darken">
+                  <span class="span-text">Wikipedia graph</span></br></br>
+                  <span style="font-size: 160%;">Fall 2019 Project</span></br>
+                  <span style="font-size: 130%;">Full Stack Web App to scrape Wikipedia pages
+                    and display the first three links found in the content
+                    section of that page.</br>Collabs: Nikolai Peram (github.com/thefinaljob)
+                  </span>
+                </p>
+              </a>
+              <p class="font_para">Wiki Graph</p>
+            </figure>
+
+            <figure class="col-md-4 middle" data-aos="fade" data-aos-delay="1900">
+              <a href="https://github.com/ParsaYadollahi/react_website" data-size="1600x1067" class="darken"
+                target="_blank">
+                <img src="images/pourya_web.png" class="proj_imgs img-fluid z-depth-1">
+                <p class="darken-text darken">
+                  <span class="span-text">Personal Website for Brother</span></br></br>
+                  <span style="font-size: 160%;">Fall 2019</span></br>
+                  <span style="font-size: 130%;">Project to repay debt for teaching me the basics of React.
+                    Implemented to learn fundamentals of Material-UI</br>Collabs:</br>Alone</span>
+                </p>
+              </a>
+              <p class="font_para">Profile Page</p>
+            </figure>
+
+            <figure class="col-md-4 middle" data-aos="fade" data-aos-delay="2100">
+              <a href="https://wagwan-6797c.firebaseapp.com" data-size="1600x1067" class="darken" target="_blank">
+                <img src="images/blank_image.png" class="proj_imgs img-fluid z-depth-1">
+                <p class="darken-text darken">
+                  <span class="span-text">Social Media App</span></br></br>
+                  <span style="font-size: 160%;">Decemeber 2019 - January 2020</span></br>
+                  <span style="font-size: 130%;">Social Media app that'll allow you to
+                    login/sign up, create posts, upload images and receive
+                    notifications from your posts</br>Collabs:</br>Alone</span>
+                </p>
+              </a>
+              <p class="font_para">Social Media App</p>
+            </figure>
+
+
+            <figure class="col-md-4 middle" data-aos="fade" data-aos-delay="2300">
+              <a href="https://githubissuesexplorer.herokuapp.com/" data-size="1600x1067" class="darken"
+                target="_blank">
+                <img src="images/github_issues_explorer.png" class="proj_imgs img-fluid z-depth-1">
+                <p class="darken-text darken">
+                  <span class="span-text">GitHub Issues Explorer</span></br></br>
+                  <span style="font-size: 160%;">January 2020</span></br>
+                  <span style="font-size: 130%;">Web App build off react that displays a repos issues
+                    and pull requests while allowing them to filter states.</br>Collabs:</br>Alone</span>
+                </p>
+              </a>
+              <p class="font_para">GitHub Issues Explorer</p>
+            </figure>
+
+            <figure class="col-md-4 middle" data-aos="fade" data-aos-delay="2400">
+              <div class="darken">
+                <img src="images/loading_dots.gif" class="tree_dot_img img-fluid z-depth-1">
+                <p class="tree_dot_darken-text darken">
+                  <span style="font-family: 'Oswald', sans-serif; font-size: 22px; color: rgb(0, 0, 0);">
+                    More to come - tkt
+                  </span>
+                </p>
+              </div>
+            </figure>
+
+          </div>
+        </div>
+      </div>
+      <!--/First row-->
+      <!-- Ending Page -->
+      <div id="contact" class="newPage">
+        <div>
+          <div class="endingpg">
+            <div style="padding: 4em 0;">
+              <a href="https://www.linkedin.com/in/parsa-yadollahi/" target="_blank">
+                <button class="endingButton"
+                  onclick="window.open('https://www.linkedin.com/in/parsa-yadollahi/','_blank')">
+                  <i class="fa fa-linkedin"></i>
+                </button>
+              </a>
+              <a href="https://github.com/ParsaYadollahi" target="_blank">
+                <button class="endingButton" onclick="window.open('https://github.com/ParsaYadollahi','_blank')">
+                  <i class="fa fa-github"></i>
+                </button>
+              </a>
+              <p class="madeBy">
+                Made By
+              </p>
+              <h1 class="nameProgram">
+                Parsa Yadollahi - Computer Science McGill
+              </h1>
+              <h2>
+                <address>
+                  <a href="mailto:parsayadollahi@mail.mcgill.ca" class="email" target="_blank"
+                    style="display: block;">parsayadollahi@mail.mcgill.ca</a>
+                </address>
+              </h2>
+              <a href="#home">
+                <button class="backTopbtn">
+                  <i class="fa fa-chevron-up"></i>
+                  <br>
+                  Back to Top
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+  </script>
+</body>
+
+</html>
+
+<script src="JavaScript/WebSite.js"></script>

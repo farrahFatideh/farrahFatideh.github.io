@@ -1,0 +1,50 @@
+// Font Family
+$fontstyle: 'Oswald', sans-serif;
+$phoneIntro: 865px;
+$phoneProject: 830px;
+$phoneTimeLine: 770px;
+$phoneProject: 1000px;
+
+// Max height and width
+@mixin proportions($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+// When the screen shrinks
+$projectView: 900px;
+$introView: 960px;
+
+@mixin project {
+  @media (max-width: #{$projectView}){
+    @content; 
+  }
+}
+
+@mixin clock {
+  @media (max-width: #{1500px}){
+    @content
+  }
+}
+
+@mixin intro {
+  @media (max-width: #{$introView}){
+    @content;
+  }
+}
+@mixin timeLine {
+  @media (max-width: #{$phoneTimeLine}) {
+    @content;
+  }
+}
+@mixin project {
+  @media (max-width: #{$phoneProject}) {
+    @content;
+  }
+}
+.container {
+  display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}

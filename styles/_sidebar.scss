@@ -1,0 +1,98 @@
+@import "variables";
+
+.sidebar {
+    @include proportions(100%, 0);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top,
+                  color-stop(0.95, rgb(25, 25, 26)),
+                  color-stop(0.9, rgb(35, 37, 39)),
+                  color-stop(0.75, rgb(44, 46, 51)),
+                  color-stop(0.6, rgb(47, 49, 54)),
+                  color-stop(0.45, rgb(57, 60, 70)),
+                  color-stop(0.3, rgb(53, 57, 70)),
+                  color-stop(0.15, rgb(75, 76, 89)));
+    overflow-x: hidden;
+    transition: 0.7s;
+    padding-top: 60px;
+    white-space: nowrap;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    opacity: 0.45;
+    font-family: $fontstyle;
+    font-size: 16px;
+  
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+    opacity: 1;
+    font-size: 16px;
+    font-family: $fontstyle;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5)
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  
+  div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    z-index: 100;
+    display: inline-block;
+  }
+  .toggleContent {
+      font-size: 17px;
+      font-family: $fontstyle;
+      letter-spacing: 2px;
+      padding: 0;
+  }
+  .arrawsToggle {
+      font-size: 17px;
+      text-align: center;
+  }
+  #overlay {
+    position: fixed;
+    display: none;
+    @include proportions(100%, 100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(62, 62, 73, 0.7);
+    z-index: 3;
+    cursor: pointer;
+  }

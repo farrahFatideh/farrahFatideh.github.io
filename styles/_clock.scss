@@ -1,0 +1,29 @@
+@import "variables";
+
+.clock{
+    @include proportions(100%, 100%);
+    @extend .container;
+    font-size: 2em;
+    text-align: right;
+    float: right;
+    color: white;
+    font-family: $fontstyle;
+    font-size: 25px;
+    font-weight: 560;
+    width: auto;
+    position: absolute;
+    right: 6%;
+    padding: auto;
+    padding-left: 1em;
+}
+.date {
+    @extend .clock;
+    padding-left: 1%;
+    right: 13%;
+    padding: auto;
+
+
+    @include clock {
+        display: none
+    }
+}
